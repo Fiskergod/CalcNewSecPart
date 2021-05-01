@@ -20,11 +20,10 @@
         android:layout_margin="5dp"
         tools:ignore="LabelFor" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="1dp"
         android:onClick="btnCancel"
         android:text="@string/buttonC"
         app:layout_constraintBottom_toTopOf="@+id/btn1"
@@ -34,11 +33,10 @@
         app:layout_constraintTop_toBottomOf="@+id/editText_Numbers_Input"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnDivide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="1dp"
         android:onClick="btnDivide"
         android:text="@string/buttonDiv"
         app:layout_constraintBottom_toTopOf="@+id/btn2"
@@ -48,11 +46,10 @@
         app:layout_constraintTop_toBottomOf="@+id/editText_Numbers_Input"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnMult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="1dp"
         android:onClick="btnMultiply"
         android:text="@string/buttonMultiply"
         app:layout_constraintBottom_toTopOf="@+id/btn3"
@@ -62,11 +59,10 @@
         app:layout_constraintTop_toBottomOf="@+id/editText_Numbers_Input"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnDel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="1dp"
         android:onClick="btnBack"
         android:text="@string/buttonDelete"
         app:layout_constraintBottom_toTopOf="@+id/btnSubt"
@@ -76,11 +72,10 @@
         app:layout_constraintTop_toBottomOf="@+id/editText_Numbers_Input"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSubt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="1dp"
         android:onClick="btnMinus"
         android:text="@string/buttonSubtraction"
         app:layout_constraintBottom_toTopOf="@+id/btnAdd"
@@ -90,11 +85,10 @@
         app:layout_constraintTop_toBottomOf="@+id/btnDel"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="1dp"
         android:onClick="btnPlus"
         android:text="@string/buttonAddition"
         app:layout_constraintBottom_toTopOf="@+id/btnEqu"
@@ -104,11 +98,10 @@
         app:layout_constraintTop_toBottomOf="@+id/btnSubt"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnEqu"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginTop="1dp"
         android:onClick="btnEqually"
         android:text="@string/buttonEqually"
         app:layout_constraintBottom_toBottomOf="@+id/dot"
@@ -118,11 +111,10 @@
         app:layout_constraintTop_toBottomOf="@+id/btnAdd"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="1dp"
         android:onClick="btnOne"
         android:text="@string/button1"
         app:layout_constraintBottom_toTopOf="@+id/btn4"
@@ -132,11 +124,10 @@
         app:layout_constraintTop_toBottomOf="@+id/btnC"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="1dp"
         android:onClick="btnTwo"
         android:text="@string/button2"
         app:layout_constraintBottom_toTopOf="@+id/btn5"
@@ -146,11 +137,10 @@
         app:layout_constraintTop_toBottomOf="@+id/btnDivide"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="1dp"
         android:onClick="btnThree"
         android:text="@string/button3"
         app:layout_constraintBottom_toTopOf="@+id/btn6"
@@ -160,11 +150,10 @@
         app:layout_constraintTop_toBottomOf="@+id/btnMult"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="1dp"
         android:onClick="btnFour"
         android:text="@string/button4"
         app:layout_constraintBottom_toTopOf="@+id/btn7"
@@ -174,11 +163,10 @@
         app:layout_constraintTop_toBottomOf="@+id/btn1"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="1dp"
         android:onClick="btnFive"
         android:text="@string/button5"
         app:layout_constraintBottom_toTopOf="@+id/btn8"
@@ -188,11 +176,10 @@
         app:layout_constraintTop_toBottomOf="@+id/btn2"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="1dp"
         android:onClick="btnSix"
         android:text="@string/button6"
         app:layout_constraintBottom_toTopOf="@+id/btn9"
@@ -202,11 +189,10 @@
         app:layout_constraintTop_toBottomOf="@+id/btn3"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="1dp"
         android:onClick="btnSeven"
         android:text="@string/button7"
         app:layout_constraintBottom_toTopOf="@+id/btn0"
@@ -216,11 +202,10 @@
         app:layout_constraintTop_toBottomOf="@+id/btn4"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="1dp"
         android:onClick="btnEight"
         android:text="@string/button8"
         app:layout_constraintBottom_toTopOf="@+id/btn0"
@@ -230,11 +215,10 @@
         app:layout_constraintTop_toBottomOf="@+id/btn5"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="1dp"
         android:onClick="btnNine"
         android:text="@string/button9"
         app:layout_constraintBottom_toTopOf="@+id/dot"
@@ -244,11 +228,10 @@
         app:layout_constraintTop_toBottomOf="@+id/btn6"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn0"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="1dp"
         android:onClick="btnZero"
         android:text="@string/button0"
         app:layout_constraintEnd_toEndOf="@+id/btn8"
@@ -257,11 +240,10 @@
         app:layout_constraintTop_toBottomOf="@+id/btn7"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/dot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="1dp"
         android:onClick="btnDot"
         android:text="@string/dot"
         app:layout_constraintEnd_toEndOf="@+id/btn9"
