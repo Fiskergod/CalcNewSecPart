@@ -1,20 +1,33 @@
 package com.example.calcnewsecondpart;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.SpannableStringBuilder;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.calcnewsecondpart.domain.ThemesStorage;
+
 public class MainActivity extends AppCompatActivity {
 
+    private ThemesStorage themesStorage;
     private EditText display;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        themesStorage = new ThemesStorage(this);
+        setTheme(themesStorage.getCurrentTheme().getRes());
+
         setContentView(R.layout.activity_main);
+
+        findViewById(R.id.settings).setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+            startActivity(intent);
+        });
 
         display = findViewById(R.id.editText_Numbers_Input);
         display.setShowSoftInputOnFocus(false);
@@ -51,6 +64,11 @@ public class MainActivity extends AppCompatActivity {
         display.setSelection(result.length()); */
     }
 
+    public void numClick(View view) {
+        Button btn = (Button)view;
+        updateText(btn.getText().toString());
+    }
+/*
     public void btnNine(View view) {
         updateText("9");
     }
@@ -85,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void btnOne(View view) {
         updateText("1");
-    }
+    } */
 
     public void btnPlus(View view) {
         updateText("+");
@@ -119,4 +137,9 @@ public class MainActivity extends AppCompatActivity {
         display.setText("");
     }
 
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        recreate();
+    }
 }

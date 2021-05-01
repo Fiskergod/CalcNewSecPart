@@ -19,4 +19,8 @@
     <string name="buttonSubtraction">-</string>
     <string name="buttonAddition">+</string>
     <string name="buttonEqually">=</string>
+    <string name="theme_1">Theme 1</string>
+    <string name="theme_2">Theme 2</string>
+    <string name="choose_your_theme">Choose your theme</string>
+    <string name="Settings">Settings</string>
 </resources>
