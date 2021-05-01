@@ -5,4 +5,10 @@
         <item name="android:backgroundTint">@color/black</item>
         <item name="android:layout_margin">@dimen/margin_size</item>
     </style>
+    <style name="ButtonStyle_2" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:layout_width">@dimen/button_size</item>
+        <item name="android:layout_height">@dimen/button_size</item>
+        <item name="android:backgroundTint">#AF1616</item>
+    </style>
 </resources>
